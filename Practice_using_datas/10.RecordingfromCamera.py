@@ -3,7 +3,12 @@ import cv2 as cv
 cap = cv.VideoCapture(0) # 연결된 device0을 선택
 frameWidth = 640
 frameHeight = 480
+# fps = 20.0
+# (frameWidth, frameHeight) = (640,480) # 위에 정해준 값을 한 줄로 표현
+
 cap.set(cv.CAP_PROP_FRAME_WIDTH, frameWidth)
+# cap.set(cv.CAP_PROP_FRAME_HEIGHT, frameHeight)
+# cap.set(cv.CAP_PROP_FPS, fps)
 cap.set(4,frameHeight)
 
 fourcc = cv.VideoWriter_fourcc(*'XVID')
