@@ -2,6 +2,7 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
+# ------------------------ Method 1 ----------------------------------------------------
 img = cv.imread("./datas/images/load_image.jpg")
 plt.figure()
 
@@ -29,7 +30,7 @@ cv.destroyAllWindows()
 # cv.imshow("Messi",img)
 # cv.waitKey(0)
 
-# -------------------------- Method 1 ----------------------------------------------
+# -------------------------- Method 2 ----------------------------------------------
 # def mouse_callback(event, x, y, flags, param): 
 #     print("마우스 좌표, x:", x ," y:", y) # 이벤트 발생한 마우스 위치 출력
 
