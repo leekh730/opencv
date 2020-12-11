@@ -2,7 +2,7 @@ import cv2 as cv
 import numpy as np
 
 def frame_diff(prev_frame, cur_frame, next_frame):
-    diff_frames_1 = cv.absdiff(next_frame, cur_frame) # absdiff(src1, src2), src는 array or scalar
+    diff_frames_1 = cv.absdiff(next_frame, cur_frame) # absdiff(src1, src2), src는 array or scalar, absdiff는 absoulute diffent로 절대값을 비교
     diff_frames_2 = cv.absdiff(cur_frame, prev_frame)
     return_diff = cv.absdiff(diff_frames_1, diff_frames_2)
 
