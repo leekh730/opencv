@@ -1,6 +1,6 @@
 # Read image, Videos, Webcam
 
-import cv2 as cv
+import cvfrom cv2 import cv2 as cv
 
 frameWidth = 640
 frameHeight = 480

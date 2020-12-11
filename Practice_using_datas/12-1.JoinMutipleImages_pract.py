@@ -1,4 +1,4 @@
-import cv2 as cv
+import cv2 as cvfrom cv2 import cv2 as cv
 import numpy as np
 
 # image 불러오기

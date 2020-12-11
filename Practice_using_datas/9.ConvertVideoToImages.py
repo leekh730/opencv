@@ -1,5 +1,5 @@
 import os
-import cv2 as cv
+from cv2 import cv2 as cv
 
 directoryname = os.getcwd() + '/datas/images/Imageframes/'
 files = os.listdir(directoryname)

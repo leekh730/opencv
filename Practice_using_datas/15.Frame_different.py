@@ -1,4 +1,4 @@
-import cv2 as cv
+from cv2 import cv2 as cv
 import numpy as np
 
 def frame_diff(prev_frame, cur_frame, next_frame):

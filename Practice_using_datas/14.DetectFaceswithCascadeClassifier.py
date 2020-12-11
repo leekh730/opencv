@@ -1,5 +1,5 @@
 import os
-import cv2 as cv
+import cv2 as cvfrom cv2 import cv2 as cv
 
 path = os.getcwd()
 print(path)

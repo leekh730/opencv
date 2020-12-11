@@ -1,5 +1,5 @@
 # reference https://docs.opencv.org/4.4.0/d8/dfe/classcv_1_1VideoCapture.html#ac4107fb146a762454a8a87715d9b7c96
-import cv2 as cv
+import cv2 as cvfrom cv2 import cv2 as cv
 
 frameWidth = 640
 frameHeight = 480

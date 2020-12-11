@@ -1,4 +1,4 @@
-import cv2 as cv
+import cv2 as cvfrom cv2 import cv2 as cv
 
 cascade = cv.CascadeClassifier("datas/haar_cascade_files/haarcascade_frontalface_default.xml")
 img = cv.imread("datas/images/lena.png")

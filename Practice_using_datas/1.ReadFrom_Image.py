@@ -1,6 +1,6 @@
 # reference https://docs.opencv.org/4.2.0/d7/dfc/group__highgui.html#ga5628525ad33f52eab17feebcfba38bd7
 import os
-import cv2 as cv
+from cv2 import cv2 as cv
 print(os.getcwd()) # /home/rapa/Documents/opencv
 
 img = cv.imread("./datas/images/lena.png")
