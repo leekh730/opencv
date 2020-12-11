@@ -1,7 +1,7 @@
 # try, except 문 사용해보기
 # tyy, excpet문은 내가 예상했던 에러들이 아닌 그 외의 에러들을 캐치하기 위해 사용한다.
 
-import cv2 as cvfrom cv2 import cv2 as cv
+from cv2 import cv2 as cv
 
 frameWidth = 640
 frameHeight = 480
