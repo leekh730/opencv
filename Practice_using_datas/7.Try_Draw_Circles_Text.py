@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # ------------------------ Method 1 ----------------------------------------------------
 img = cv.imread("./datas/images/load_image.jpg")
-plt.figure()
+# plt.figure()
 
 cv.rectangle(img, (52, 80), (110,114), (0,0,255), 2)
 cv.putText(img, "Hand", (114,93), cv.FONT_HERSHEY_COMPLEX, 0.8, (0, 0, 255), 2)
@@ -19,16 +19,20 @@ cv.rectangle(img, (327, 282), (393,337), (0,0,255), 2)
 cv.putText(img, "Ball", (331,282), cv.FONT_HERSHEY_COMPLEX, 0.8, (0, 0, 255), 2)
 
 cv.circle(img, (71, 300), 20, (255,0,0), cv.FILLED)
-cv.line(img, (71,300), (img.shape[0],img.shape[1]), (255,0,0), 3)
+cv.line(img, (71, 300), (79, 115), (255,0,0), 2)
+cv.line(img, (71, 300), (220, 137), (255,0,0), 2)
+cv.line(img, (71, 300), (328, 308), (255,0,0), 2)
+cv.line(img, (71, 300), (393, 237), (255, 0, 0), 2)
 
-plt.imshow(img[:,:,::-1])
-plt.show()
+# plt.imshow(img[:,:,::-1])
+# plt.show()
 
+cv.imshow("Messi Result",img)
 
+while True:
+    if cv.waitKey(1) == 27:
+        break
 cv.destroyAllWindows()
-
-# cv.imshow("Messi",img)
-# cv.waitKey(0)
 
 # -------------------------- Method 2 ----------------------------------------------
 # def mouse_callback(event, x, y, flags, param): 
